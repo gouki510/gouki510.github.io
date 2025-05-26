@@ -27,12 +27,19 @@
       "institution": "University of Tokyo, Tokyo, Japan",
       "location": "Tokyo, Japan",
       "url": "https://www.u-tokyo.ac.jp/en/",
+      "area": "Mechanical Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2019-04-01",
+      "endDate": "2023-03-31"
+    },
+    {
+      "institution": "University of Tokyo, Tokyo, Japan",
+      "location": "Tokyo, Japan",
+      "url": "https://www.u-tokyo.ac.jp/en/",
       "area": "Technology Management for Innovation",
       "studyType": "Master",
       "startDate": "2023-04-01",
-      "endDate": "2025-03-31",
-      "score": "",
-      "courses": [""]
+      "endDate": "2025-03-31"
     }
   ],
   "work": [
@@ -41,27 +48,21 @@
       "position": "Chief AI Engineer",
       "url": "https://matsuo-institute.com/",
       "startDate": "2023-11-01",
-      "endDate": "",
-      "summary": "",
-      "highlights": [""]
+      "endDate": ""
     },
     {
       "name": "neoAI",
       "position": "AI Researcher",
       "url": "https://neoai.jp/",
       "startDate": "2024-03-01",
-      "endDate": "",
-      "summary": "",
-      "highlights": [""]
+      "endDate": ""
     },
     {
       "name": "Preferred Networks",
       "position": "AI Research Intern",
       "url": "https://www.preferred.jp/en/",
       "startDate": "2024-08-01",
-      "endDate": "2024-09-31",
-      "summary": "",
-      "highlights": [""]
+      "endDate": "2024-09-31"
     }
   ],
   "volunteer": [
@@ -71,9 +72,7 @@
       "position": "Organizer",
       "url": "https://www.ai-gakkai.or.jp/jsai2025/os/#OS-32",
       "startDate": "2025-05-27",
-      "endDate": "2025-05-30",
-      "summary": "",
-      "highlights": [""]
+      "endDate": "2025-05-30"
     }
   ]
 }
