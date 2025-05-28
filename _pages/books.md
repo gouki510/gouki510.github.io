@@ -1,7 +1,7 @@
 ---
 layout: book-shelf
 title: ReadLog
-permalink: /ReadLog/
+permalink: /books/
 nav: false
 collection: books
 ---
