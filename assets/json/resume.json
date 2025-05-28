@@ -40,6 +40,15 @@
       "studyType": "Master",
       "startDate": "2023-04-01",
       "endDate": "2025-03-31"
+    },
+    {
+      "institution": "University of Tokyo, Tokyo, Japan",
+      "location": "Tokyo, Japan",
+      "url": "https://www.u-tokyo.ac.jp/en/",
+      "area": "Technology Management for Innovation",
+      "studyType": "Doctor",
+      "startDate": "2023-04-01",
+      "endDate": ""
     }
   ],
   "work": [
