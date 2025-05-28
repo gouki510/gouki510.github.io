@@ -74,7 +74,7 @@
       "endDate": "2024-09-31"
     }
   ],
-  "volunteer": [
+  "Academic Activitites": [
     {
       "organization": "Mechanistic Interpretability Organized Sessions, JSAI2025",
       "location": "Japan, Tokyo",
@@ -82,6 +82,16 @@
       "url": "https://www.ai-gakkai.or.jp/jsai2025/os/#OS-32",
       "startDate": "2025-05-27",
       "endDate": "2025-05-30"
+    },
+    {
+      "organization": "Reviewer for Neural Information Processing Systems (NeurIPS)",
+      "startDate": "2025",
+      "endDate": "2025"
+    },
+    {
+      "organization": "Reviewer for International Conference on Machine Learning (ICML)",
+      "startDate": "2025",
+      "endDate": "2025"
     }
   ]
 }
