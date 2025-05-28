@@ -74,33 +74,27 @@
       "endDate": "2024-09-31"
     }
   ],
-  "Academic Activitites": [
+  "academic activities": [
     {
-      "organization": "Mechanistic Interpretability Organized Sessions, JSAI2025",
-      "location": "Japan, Tokyo",
+      "title": "Mechanistic Interpretability Organized Sessions, JSAI2025",
       "position": "Organizer",
       "url": "https://www.ai-gakkai.or.jp/jsai2025/os/#OS-32",
-      "startDate": "2025-05-27",
-      "endDate": "2025-05-30"
+      "date": "2025-05-27"
     },
     {
-      "organization": "Reviewer for Neural Information Processing Systems (NeurIPS)",
-      "startDate": "2025",
-      "endDate": "2025"
+      "title": "Reviewer for Neural Information Processing Systems (NeurIPS)",
+      "data": "2025"
     },
     {
-      "organization": "Reviewer for International Conference on Machine Learning (ICML)",
-      "startDate": "2025",
-      "endDate": "2025"
+      "title": "Reviewer for International Conference on Machine Learning (ICML)",
+      "date": "2025"
     }
   ],
   "awards": [
     {
-      "organization": "Young Researchers Award, NLP2025",
-      "location": "Japan, Tokyo",
+      "title": "Young Researchers Award, NLP2025",
       "url": "https://www.anlp.jp/nlp2025/award.html",
-      "startDate": "2025-03",
-      "endDate": "2025-03"
+      "date": "2025-03"
     }
   ]
 }
