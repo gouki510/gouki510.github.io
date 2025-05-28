@@ -192,7 +192,7 @@ exclude:
   - _pages/repositories.md
   - _pages/teaching.md
   - _pages/profiles.md
-
+  
 keep_files:
   - CNAME
   - .nojekyll
@@ -287,7 +287,7 @@ scholar:
 
   query: "@*"
   group_by: year
-  group_order: ascending
+  group_order: descending
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
