@@ -1,6 +1,6 @@
 ---
-layout: book-shelf
-title: ReadLog
+layout: default
+title: ReadHub
 permalink: /books/
 nav: false
 collection: books
