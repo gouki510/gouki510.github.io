@@ -93,5 +93,14 @@
       "startDate": "2025",
       "endDate": "2025"
     }
+  ],
+  "awards": [
+    {
+      "organization": "Young Researchers Award, NLP2025",
+      "location": "Japan, Tokyo",
+      "url": "https://www.anlp.jp/nlp2025/award.html",
+      "startDate": "2025-03",
+      "endDate": "2025-03"
+    }
   ]
 }
