@@ -11,6 +11,10 @@ collection: books
 > -- Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)
 
 ## Papers that I am reading, have read, or will read
+- **[Learning to Reason without External Rewards](https://arxiv.org/abs/2505.19590)**  
+  一様分布とモデルの出力分布の最大化(≒モデルのconfidenceの最大化)でRLしても結構学習できちゃう
+  Aha momentは起きてるかはわからない（明示的に書いていないから起きてなさそう）
+
 - **[Mechanistic evaluation of Transformers and state space models](https://arxiv.org/abs/2505.15105)**  
   SSM系がTransformerより性能が低いのは，induction headが学習できないから（と言っているように見える）．
   Linear AttentionとSliding Windowを組み合わせたBASEDは学習できる．
