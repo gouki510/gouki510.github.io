@@ -11,6 +11,11 @@ collection: books
 > -- Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)
 
 ## Papers that I am reading, have read, or will read
+- **[Mechanistic evaluation of Transformers and state space models](https://arxiv.org/abs/2505.15105)**  
+  SSM系がTransformerより性能が低いのは，induction headが学習できないから（と言っているように見える）．
+  Linear AttentionとSliding Windowを組み合わせたBASEDは学習できる．
+  ただタスクがAR系のみなのでそこはLimitationか．
+
 - **[AI Alignment Requires Understanding How Data Shapes Structure and Generalisation](https://arxiv.org/abs/2502.05475)**  
   データの統計的性質は，loss landscapeの形状や学習プロセス，モデルが獲得したアルゴリズムに間接的に影響を与えるが，間接的なので同じデータを与えてもモデルの振る舞いが異なる時がある．（つまりデータの性質だけではモデルの振る舞いは予測できない）なので，本質的なアライメントのためには，モデル内部を知る必要があるという主張．（道具はSLT）
 
