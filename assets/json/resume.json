@@ -76,16 +76,20 @@
   ],
   "academic activities": [
     {
-      "title": "Annual AAAI Conference on Artificial Intelligence (AAAI)",
-      "data": "2026"
-    },
-    {
       "title": "Reviewer for Neural Information Processing Systems (NeurIPS)",
-      "data": "2025"
+      "date": "2025"
     },
     {
       "title": "Reviewer for International Conference on Machine Learning (ICML)",
       "date": "2025"
+    },
+    {
+      "title": "Reviewer for International Conference on Learning Representations (ICLR)",
+      "date": "2026"
+    },
+    {
+      "title": "Reviewer for Annual AAAI Conference on Artificial Intelligence (AAAI)",
+      "date": "2026"
     },
     {
       "title": "Mechanistic Interpretability Organized Sessions, JSAI2025",
