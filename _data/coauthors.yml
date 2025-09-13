@@ -1,7 +1,11 @@
 "yutaka":
-  - firstname: ["Yutaka", "Y."]
+  - firstname: ["Yutaka", "Y.", "Matsuo"]
     url: https://ymatsuo.com/
 
 "furuta":
   - firstname: ["Hiroki", "F."]
     url: https://frt03.github.io/
+
+"iwasawa":
+  - firstname: ["Yusuke", "Iwasawa"]
+    url: https://sites.google.com/view/yusuke-iwasawa/home
