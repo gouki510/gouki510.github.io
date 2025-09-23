@@ -267,7 +267,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Minegishi]
+  last_name: [Minegishi, Gouki]
   first_name: [Gouki, G., Minegishi]
 
   style: apa
