@@ -7,11 +7,13 @@ first_name: Gouki
 middle_name: 
 last_name: Minegishi
 contact_note: 
-description:  # the ">" symbol means to ignore newlines until "footer_text:"
+description: >
+  PhD student at The University of Tokyo, researching mechanistic interpretability 
+  to understand the inner workings of AI systems.
 footer_text: 
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🍣 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ⛩️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://gouki510.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -81,8 +83,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Blog # blog_name will be displayed in your blog page
+blog_description: Thoughts on AI and research
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -445,7 +447,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

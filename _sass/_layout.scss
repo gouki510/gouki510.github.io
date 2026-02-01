@@ -6,6 +6,8 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: "Zen Kaku Gothic New", "Noto Serif JP", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.02em;
 
   h1,
   h2,
@@ -14,6 +16,8 @@ body {
   h5,
   h6 {
     scroll-margin-top: 66px;
+    font-family: "Noto Serif JP", "Zen Kaku Gothic New", serif;
+    font-weight: 500;
   }
 }
 

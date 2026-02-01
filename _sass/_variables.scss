@@ -24,6 +24,16 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
+// Japanese-inspired Colors (和風カラー)
+$ai-color: #1e3a5f !default;           // 藍色 (Indigo)
+$ai-color-light: #2d5a87 !default;     // 薄藍
+$shu-color: #c53d43 !default;          // 朱色 (Vermillion)
+$shu-color-dark: #a03038 !default;     // 深朱
+$sumi-color: #1c1c1c !default;         // 墨色 (Ink black)
+$kinari-color: #f8f4e6 !default;       // 生成り色 (Off-white)
+$hai-color: #7d7d7d !default;          // 灰色
+$uguisu-color: #838b3d !default;       // 鶯色 (Olive green)
+
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;

@@ -38,10 +38,13 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
 
   &:hover {
-    color: var(--global-theme-color);
-    text-decoration: underline;
+    color: var(--global-hover-color);
+    text-decoration: none;
   }
 
   &:hover:after :not(.nav-item.dropdown) {
@@ -247,7 +250,9 @@ ul.task-list input[type="checkbox"] {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  opacity: 0.98;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar .dropdown-menu {
@@ -1416,4 +1421,128 @@ figure.cover {
   a.cover-link:hover {
     color: #23212d !important;
   }
+}
+
+/*******************************************************************************
+ * Japanese-inspired Custom Styles (和風カスタムスタイル)
+ ******************************************************************************/
+
+// Elegant underline effect for navigation links
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--global-hover-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  &:hover::after {
+    width: 80%;
+  }
+}
+
+// Name/brand styling with subtle decoration
+.navbar-brand {
+  font-family: "Noto Serif JP", serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+// Publication badges with refined style
+.publications ol.bibliography li .abbr abbr {
+  border-radius: 0;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+}
+
+// Refined blockquote style (vertical line like Japanese book binding)
+blockquote {
+  border-left: 3px solid var(--global-theme-color);
+  background: transparent;
+  padding-left: 1.5em;
+  font-style: italic;
+  
+  &::before {
+    content: none;
+  }
+}
+
+// Subtle card hover effect
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(30, 58, 95, 0.1);
+  }
+}
+
+// Section headers with decorative line
+h2.bibliography,
+.publications h1 {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    background: var(--global-hover-color);
+  }
+}
+
+// Social icons with smooth transition
+.social .contact-icons a {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+  }
+}
+
+// About page name styling
+.about h1 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+}
+
+// Refined footer
+footer {
+  letter-spacing: 0.05em;
+}
+
+// Selected publications section styling
+.selected {
+  position: relative;
+}
+
+// Smooth scroll behavior
+html {
+  scroll-behavior: smooth;
+}
+
+// Selection color
+::selection {
+  background-color: rgba(197, 61, 67, 0.2);
+  color: inherit;
+}
+
+// Focus states
+*:focus {
+  outline-color: var(--global-theme-color);
 }
