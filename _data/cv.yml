@@ -3,53 +3,74 @@
   contents:
     - name: Full Name
       value: Gouki Minegishi
-    - name: Date of Birth
-      value: 10th May 2000
+    - name: Affiliation
+      value: The University of Tokyo (Ph.D. Candidate)
+    - name: Advisor
+      value: Prof. Yutaka Matsuo
+    - name: Email
+      value: minegishi@weblab.t.u-tokyo.ac.jp
     - name: Languages
-      value: Japanese
+      value: Japanese, English
+
+- title: Research Interests
+  type: list
+  contents:
+    - Mechanistic Interpretability
+    - In-Context Learning
+    - Large Language Models
+    - Reasoning
+    - Sparse Autoencoders
+    - Neural Network Circuits
 
 - title: Education
-  type: timetable
+  type: time_table
   contents:
-    - title: Master
-      institution: University of Tokyo, Tokyo, Japan
-      year: 2023
+    - title: Ph.D. in Computer Science
+      institution: The University of Tokyo
+      year: Apr 2025 – Mar 2028
       description:
-        - Department of Technology Management for Innovation
+        - "Advisor: Prof. Yutaka Matsuo"
+    - title: M.S. in Computer Science
+      institution: The University of Tokyo
+      year: Apr 2023 – Mar 2025
+    - title: B.S. in Engineering
+      institution: The University of Tokyo
+      year: Apr 2019 – Mar 2023
 
 - title: Experience
   type: time_table
   contents:
-    - title: AI Engineer
-      institution: Matsuo Institute
-      year: 2023 - now
+    - title: Research Scientist
+      institution: Third Intelligence, Inc.
+      year: Jun 2025 – Present
       description:
-        - hoge 
-    
-    - title: AI Researcher
-      institution: neoAI
-      year: 2024 - now
+        - Research on developing new forms of intelligence beyond conventional AI, aiming to bridge human-like reasoning, perception, and action.
+    - title: Chief AI Engineer
+      institution: Matsuo Institute, Inc.
+      year: Nov 2024 – May 2025
       description:
-        - hoge
-
+        - Developed automated driving software, including 3D object detection with deep learning and integration of the World Model into automated driving.
     - title: Research Intern
-      institution: Preferred Networks
-      year: 2024-2024
-
-
+      institution: Preferred Networks, Inc.
+      year: Aug 2024 – Oct 2024
+      description:
+        - Research on in-context learning in foundation models, with knowledge conflicts.
 
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - Young Researcher Encouragement Award, NLP
+        - Oral Presentation, ICLR 2025 Workshop (Building Trust in LMs)
+        - "Selected for \"BOOST NAIS\" Scholarship Program for fostering advanced AI talents"
     - year: 2024
       items:
-        - Young Researchers Award, NLP2025
+        - Outstanding Presentation Award, JSAI 2024
+        - Oral Presentation, ICLR 2024 Workshop (Bridging Practice and Theory)
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Mechanistic Interpretability
-- title: Other Interests
+- title: Academic Service
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "<strong>Reviewer:</strong> ICLR 2026, AAAI 2026, NeurIPS 2025, ICML 2025/2026"
+    - "<strong>Organizer:</strong> Mechanistic Interpretability Organized Session at JSAI 2025"
