@@ -16,6 +16,22 @@ nav_order: 3
 <li>
 <div class="row">
 <div class="col-sm-2 abbr">
+<abbr class="badge">KPMG</abbr>
+</div>
+<div id="talk-kpmg-2026" class="col-sm-8">
+<div class="title">Reading the Structure of Intelligence: Mechanistic Interpretability for Designing Trustworthy AI</div>
+<div class="author">KPMG</div>
+<div class="periodical"><em>Mar 6, 2026</em></div>
+<div class="links">
+<a href="https://speakerdeck.com/gouki/jie-shi-ke-neng-xing-deqie-rituo-kuxin-lai-dekiruainoshe-ji-lun" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Slides</a>
+</div>
+</div>
+</div>
+</li>
+
+<li>
+<div class="row">
+<div class="col-sm-2 abbr">
 <abbr class="badge">NLP Colloquium</abbr>
 </div>
 <div id="talk-nlp-colloquium-2026" class="col-sm-8">
