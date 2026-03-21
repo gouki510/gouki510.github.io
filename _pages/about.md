@@ -25,4 +25,4 @@ I'm a first-year PhD student at The University of Tokyo, mentored by Professor [
 
 My research passion lies in mechanistic interpretability, where I unravel the internal mechanism that drive today's AI systems, with the ultimate goal of understanding what truly constitutes human intelligence.
 
-For more details, see my [CV](/cv/).
+For more details, see my [CV](/assets/pdf/Gouki_Minegishi.pdf).
