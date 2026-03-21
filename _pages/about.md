@@ -21,8 +21,8 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-I’m a first-year PhD student at The University of Tokyo, mentored by Professor [Yutaka Matsuo](https://ymatsuo.com/).   
+I'm a first-year PhD student at The University of Tokyo, mentored by Professor [Yutaka Matsuo](https://ymatsuo.com/).   
 
-My research passion lies in mechanistic interpretability, where I unravel the internal mechanism that drive today’s AI systems, with the ultimate goal of understanding what truly constitutes human intelligence.
+My research passion lies in mechanistic interpretability, where I unravel the internal mechanism that drive today's AI systems, with the ultimate goal of understanding what truly constitutes human intelligence.
 
-
+For more details, see my [CV](/cv/).
