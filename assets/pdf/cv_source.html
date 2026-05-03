@@ -142,6 +142,17 @@
     text-decoration-color: var(--accent);
     text-underline-offset: 2px;
   }
+  .pub-list .pub-award {
+    display: inline-block;
+    background: #dc2626;
+    color: #ffffff;
+    font-size: 8pt;
+    font-weight: 700;
+    font-style: normal;
+    padding: 1px 8px;
+    border-radius: 8px;
+    margin-left: 4px;
+  }
 
   /* Awards & Service */
   .compact-list {
@@ -193,6 +204,7 @@
     section h2 { color: var(--accent) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .pill { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     a { color: var(--accent) !important; }
+    .pub-award { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #dc2626 !important; color: #ffffff !important; }
     @page { margin: 12mm 10mm; size: A4; }
   }
 </style>
@@ -248,19 +260,19 @@
   <h2>Selected Publications</h2>
   <ol class="pub-list">
     <li>
-      <span class="pub-title">Understanding Emergent Misalignment via Feature Superposition Geometry</span><br>
-      <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Takeshi Kojima, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
-      <span class="pub-venue">Annual Meeting of the Association for Computational Linguistics (ACL), 2026</span>
-    </li>
-    <li>
       <span class="pub-title">Emergent Analogical Reasoning in Transformers</span><br>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Jingyuan Feng, Hiroki Furuta, Takeshi Kojima, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
-      <span class="pub-venue">International Conference on Machine Learning (ICML), 2026 — <strong>Spotlight (top 2.2%)</strong></span>
+      <span class="pub-venue">International Conference on Machine Learning (ICML), 2026 <span class="pub-award">Spotlight (top 2.2%)</span></span>
     </li>
     <li>
       <span class="pub-title">Steering at the Source: Style Modulation Heads for Robust Persona Control</span><br>
       <span class="pub-authors">Yoshihiro Izawa, <span class="me">Gouki Minegishi</span>, Koshi Eguchi, Sosuke Hosokawa, and Kenjiro Taura</span><br>
       <span class="pub-venue">International Conference on Machine Learning (ICML), 2026</span>
+    </li>
+    <li>
+      <span class="pub-title">Understanding Emergent Misalignment via Feature Superposition Geometry</span><br>
+      <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Takeshi Kojima, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
+      <span class="pub-venue">Annual Meeting of the Association for Computational Linguistics (ACL), 2026</span>
     </li>
     <li>
       <span class="pub-title">Mechanism of Task-oriented Information Removal in In-context Learning</span><br>
