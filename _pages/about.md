@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 峰岸剛基 · PhD Student · Matsuo Lab, The University of Tokyo
+subtitle: 
 description: Gouki Minegishi (峰岸剛基) — PhD student at The University of Tokyo (Matsuo Lab) researching mechanistic interpretability of large language models. Publications, talks, and CV.
 keywords: Gouki Minegishi, 峰岸剛基, mechanistic interpretability, LLM interpretability, AI safety, Matsuo Lab, University of Tokyo
 
