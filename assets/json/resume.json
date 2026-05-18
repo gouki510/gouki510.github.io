@@ -67,7 +67,7 @@
       "endDate": ""
     },
     {
-      "name": "Matuso Institute",
+      "name": "Matsuo Institute",
       "position": "Chief AI Engineer",
       "url": "https://matsuo-institute.com/",
       "startDate": "2023-11-01",
@@ -85,7 +85,7 @@
       "position": "AI Research Intern",
       "url": "https://www.preferred.jp/en/",
       "startDate": "2024-08-01",
-      "endDate": "2024-09-31"
+      "endDate": "2024-09-30"
     }
   ],
   "academic activities": [
@@ -95,6 +95,10 @@
     },
     {
       "title": "Reviewer for International Conference on Machine Learning (ICML), Silver Reviewer",
+      "date": "2026"
+    },
+    {
+      "title": "Reviewer for Neural Information Processing Systems (NeurIPS)",
       "date": "2026"
     },
     {
