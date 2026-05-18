@@ -53,6 +53,13 @@
   ],
   "work": [
     {
+      "name": "Google DeepMind",
+      "position": "Student Researcher",
+      "url": "https://deepmind.google/",
+      "startDate": "2026-05-01",
+      "endDate": "2026-10-31"
+    },
+    {
       "name": "Third Intelligence",
       "position": "Researcher",
       "url": "https://third-intelligence.com/en",
@@ -87,6 +94,10 @@
       "date": "2025"
     },
     {
+      "title": "Reviewer for International Conference on Machine Learning (ICML), Silver Reviewer",
+      "date": "2026"
+    },
+    {
       "title": "Reviewer for International Conference on Machine Learning (ICML)",
       "date": "2025"
     },
@@ -106,6 +117,10 @@
     }
   ],
   "awards": [
+    {
+      "title": "Best Paper Award (最優秀論文賞), JSAI 2026",
+      "date": "2026"
+    },
     {
       "title": "Young Researchers Award, NLP2025",
       "url": "https://www.anlp.jp/nlp2025/award.html",
