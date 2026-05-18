@@ -64,7 +64,7 @@
   contents:
     - year: 2026
       items:
-        - Best Paper Award (最優秀論文賞), JSAI 2026
+        - Best Paper Award, JSAI 2026
     - year: 2025
       items:
         - Young Researcher Encouragement Award, NLP
@@ -78,5 +78,5 @@
 - title: Academic Service
   type: list
   contents:
-    - "<strong>Reviewer:</strong> ICML 2026 (Silver Reviewer), ICML 2025, ICLR 2026, AAAI 2026, NeurIPS 2026, NeurIPS 2025"
+    - "<strong>Reviewer:</strong> ICML 2026 (Silver Reviewer), ICLR 2026, AAAI 2026, NeurIPS 2026, ICML 2025, NeurIPS 2025"
     - "<strong>Organizer:</strong> Mechanistic Interpretability Organized Session at JSAI 2025"
