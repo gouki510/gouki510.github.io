@@ -446,6 +446,20 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Social (header, top-left under the name)
+.post-header .social.header-social {
+  text-align: left;
+  margin-top: 0.5rem;
+
+  .contact-icons {
+    font-size: 1.6rem;
+
+    a {
+      margin-right: 0.6rem;
+    }
+  }
+}
+
 .wechat-modal {
   display: none;
   position: fixed;
