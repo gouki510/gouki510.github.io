@@ -118,9 +118,9 @@
     padding-left: 22px;
     position: relative;
   }
-  .pub-list li.duplicate {
-    counter-increment: none;
-    margin-top: -2px;
+  .pub-list .pub-venue + .pub-venue {
+    display: inline-block;
+    margin-top: 1px;
   }
   .pub-list li::before {
     content: "[" counter(pub) "]";
@@ -325,11 +325,7 @@
     <li>
       <span class="pub-title">Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence</span><br>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Shohei Taniguchi, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
-      <span class="pub-venue">International Conference on Machine Learning (ICML), 2025</span>
-    </li>
-    <li class="duplicate">
-      <span class="pub-title">In-Context Meta Learning Induces Multi-Phase Circuit Emergence</span><br>
-      <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Shohei Taniguchi, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
+      <span class="pub-venue">International Conference on Machine Learning (ICML), 2025</span><br>
       <span class="pub-venue">ICLR Workshop on Building Trust in Language Models and Applications, 2025 <span class="pub-award">Oral</span></span>
     </li>
     <li>
@@ -350,11 +346,7 @@
     <li>
       <span class="pub-title">Towards Empirical Interpretation of Internal Circuits and Properties in Grokked Transformers on Modular Polynomials</span><br>
       <span class="pub-authors">Hiroki Furuta, <span class="me">Gouki Minegishi</span>, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
-      <span class="pub-venue">Transactions on Machine Learning Research (TMLR)</span>
-    </li>
-    <li class="duplicate">
-      <span class="pub-title">Interpreting Grokked Transformers in Complex Modular Arithmetic</span><br>
-      <span class="pub-authors">Hiroki Furuta, <span class="me">Gouki Minegishi</span>, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
+      <span class="pub-venue">Transactions on Machine Learning Research (TMLR)</span><br>
       <span class="pub-venue">ICLR Workshop on Bridging the Gap Between Practice and Theory in Deep Learning, 2024 <span class="pub-award">Oral</span></span>
     </li>
     <li>
