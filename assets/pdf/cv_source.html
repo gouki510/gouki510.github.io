@@ -195,6 +195,25 @@
   .service-block .label {
     font-weight: 600;
   }
+  .service-block .reviewer-list {
+    list-style: none;
+    padding: 0;
+    margin: 2px 0 4px 12px;
+  }
+  .service-block .reviewer-list li {
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+  .service-block .reviewer-list li::before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    color: var(--muted);
+  }
+  .service-block .reviewer-list .venue {
+    font-weight: 600;
+  }
 
   /* Print */
   @media print {
@@ -285,6 +304,16 @@
       <span class="pub-venue">International Conference on Learning Representations (ICLR), 2026</span>
     </li>
     <li>
+      <span class="pub-title">LIT-RAGBench: Benchmarking Generator Capabilities of Large Language Models in Retrieval-Augmented Generation</span><br>
+      <span class="pub-authors">Koki Itai, Shunichi Hasegawa, Yuta Yamamoto, <span class="me">Gouki Minegishi</span>, and Masaki Otsuki</span><br>
+      <span class="pub-venue">Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING), 2026</span>
+    </li>
+    <li>
+      <span class="pub-title">In-Context Neurofeedback: Can Large Language Models Control Their Internal Representations through Privileged Access?</span><br>
+      <span class="pub-authors">Koshiro Aoki, Ryota Takatsuki, <span class="me">Gouki Minegishi</span>, Yusuke Haruki, and Daisuke Kawahara</span><br>
+      <span class="pub-venue">Trustworthy AI for Good (AI4GOOD) Workshop @ ICML, 2026 <span class="pub-award">Spotlight</span></span>
+    </li>
+    <li>
       <span class="pub-title">Topology of Reasoning: Understanding Large Reasoning Models through Reasoning Graph Properties</span><br>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Takeshi Kojima, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">Neural Information Processing Systems (NeurIPS), 2025</span>
@@ -305,6 +334,11 @@
       <span class="pub-venue">International Joint Conference on NLP / Asia-Pacific Chapter of ACL (IJCNLP-AACL), 2025</span>
     </li>
     <li>
+      <span class="pub-title">In-Context Meta Learning Induces Multi-Phase Circuit Emergence</span><br>
+      <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Shohei Taniguchi, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
+      <span class="pub-venue">ICLR Workshop on Building Trust in Language Models and Applications, 2025 <span class="pub-award">Oral</span></span>
+    </li>
+    <li>
       <span class="pub-title">Bridging Lottery Ticket and Grokking: Understanding Grokking from Inner Structure of Networks</span><br>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">Transactions on Machine Learning Research (TMLR)</span>
@@ -318,6 +352,11 @@
       <span class="pub-title">ADOPT: Modified Adam Can Converge with Any β2 with the Optimal Rate</span><br>
       <span class="pub-authors">Shohei Taniguchi, Keno Harada, <span class="me">Gouki Minegishi</span>, et al.</span><br>
       <span class="pub-venue">Neural Information Processing Systems (NeurIPS), 2024</span>
+    </li>
+    <li>
+      <span class="pub-title">Interpreting Grokked Transformers in Complex Modular Arithmetic</span><br>
+      <span class="pub-authors">Hiroki Furuta, <span class="me">Gouki Minegishi</span>, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
+      <span class="pub-venue">ICLR Workshop on Bridging the Gap Between Practice and Theory in Deep Learning, 2024 <span class="pub-award">Oral</span></span>
     </li>
   </ol>
 </section>
@@ -370,7 +409,14 @@
 <section>
   <h2>Academic Service</h2>
   <div class="service-block">
-    <p><span class="label">Reviewer:</span> ICML 2026 (Silver Reviewer), ICLR 2026, AAAI 2026, NeurIPS 2026, ICML 2025, NeurIPS 2025</p>
+    <p><span class="label">Reviewer:</span></p>
+    <ul class="reviewer-list">
+      <li><span class="venue">ICML</span> — 2026 (Silver Reviewer), 2025</li>
+      <li><span class="venue">NeurIPS</span> — 2026, 2025</li>
+      <li><span class="venue">ICLR</span> — 2026</li>
+      <li><span class="venue">AAAI</span> — 2026</li>
+      <li><span class="venue">TMLR</span></li>
+    </ul>
     <p><span class="label">Organizer:</span> Mechanistic Interpretability Organized Session at JSAI 2025</p>
   </div>
 </section>

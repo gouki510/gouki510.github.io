@@ -78,7 +78,15 @@
         - Oral Presentation, ICLR 2024 Workshop (Bridging Practice and Theory)
 
 - title: Academic Service
-  type: list
+  type: nested_list
   contents:
-    - "<strong>Reviewer:</strong> ICML 2026 (Silver Reviewer), ICLR 2026, AAAI 2026, NeurIPS 2026, ICML 2025, NeurIPS 2025"
-    - "<strong>Organizer:</strong> Mechanistic Interpretability Organized Session at JSAI 2025"
+    - title: Reviewer
+      items:
+        - "ICML — 2026 (Silver Reviewer), 2025"
+        - "NeurIPS — 2026, 2025"
+        - "ICLR — 2026"
+        - "AAAI — 2026"
+        - "TMLR"
+    - title: Organizer
+      items:
+        - "Mechanistic Interpretability Organized Session at JSAI 2025"
