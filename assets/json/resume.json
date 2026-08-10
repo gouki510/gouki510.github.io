@@ -90,38 +90,35 @@
   ],
   "academic activities": [
     {
-      "title": "Reviewer for International Conference on Machine Learning (ICML), Silver Reviewer",
+      "title": "Reviewer for International Conference on Machine Learning (ICML)",
+      "position": "2026 (Silver Reviewer) · 2025",
+      "date": "2026"
+    },
+    {
+      "title": "Reviewer for Neural Information Processing Systems (NeurIPS)",
+      "position": "2026 · 2025",
       "date": "2026"
     },
     {
       "title": "Reviewer for International Conference on Learning Representations (ICLR)",
+      "position": "2026",
       "date": "2026"
     },
     {
       "title": "Reviewer for Annual AAAI Conference on Artificial Intelligence (AAAI)",
+      "position": "2026",
       "date": "2026"
-    },
-    {
-      "title": "Reviewer for Neural Information Processing Systems (NeurIPS)",
-      "date": "2026"
-    },
-    {
-      "title": "Reviewer for International Conference on Machine Learning (ICML)",
-      "date": "2025"
-    },
-    {
-      "title": "Reviewer for Neural Information Processing Systems (NeurIPS)",
-      "date": "2025"
     },
     {
       "title": "Reviewer for Transactions on Machine Learning Research (TMLR)",
-      "date": "Ongoing"
+      "position": "Ongoing",
+      "date": ""
     },
     {
-      "title": "Mechanistic Interpretability Organized Sessions, JSAI2025",
+      "title": "Mechanistic Interpretability Organized Sessions, JSAI 2025",
       "position": "Organizer",
       "url": "https://www.ai-gakkai.or.jp/jsai2025/os/#OS-32",
-      "date": "2025-05-27"
+      "date": "2025"
     }
   ],
   "awards": [
