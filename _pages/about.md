@@ -3,8 +3,8 @@ layout: about
 title: about
 permalink: /
 subtitle: 
-description: Gouki Minegishi (峰岸剛基) — PhD student at The University of Tokyo (Matsuo Lab) researching mechanistic interpretability of large language models. Publications, talks, and CV.
-keywords: Gouki Minegishi, 峰岸剛基, mechanistic interpretability, LLM interpretability, AI safety, Matsuo Lab, University of Tokyo
+description: Gouki Minegishi (峰岸剛基) — PhD student at The University of Tokyo (Matsuo Lab) studying complex models through simple, controlled settings, with the aim of understanding human intelligence. Publications, talks, and CV.
+keywords: Gouki Minegishi, 峰岸剛基, interpretability, LLM interpretability, science of deep learning, human intelligence, AI safety, Matsuo Lab, University of Tokyo
 
 profile:
   align: right #image: prof_pic.jpg
@@ -25,6 +25,6 @@ latest_posts:
 ---
 I'm a second-year PhD student at The University of Tokyo, mentored by Professor [Yutaka Matsuo](https://ymatsuo.com/).   
 
-My research passion lies in mechanistic interpretability, where I unravel the internal mechanism that drive today's AI systems, with the ultimate goal of understanding what truly constitutes human intelligence.
+What I enjoy most is taking a model too complicated to reason about and finding a setting simple enough to explain completely — small models, controlled tasks, clean training regimes — then using what those settings reveal to work out how capabilities actually come about. The question underneath all of it is what human intelligence really is.
 
 For more details, see my [CV](/assets/pdf/Gouki_Minegishi.pdf).

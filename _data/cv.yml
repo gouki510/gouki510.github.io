@@ -15,7 +15,8 @@
 - title: Research Interests
   type: list
   contents:
-    - Mechanistic Interpretability
+    - Interpretability
+    - Science of Deep Learning
     - In-Context Learning
     - Large Language Models
     - Reasoning

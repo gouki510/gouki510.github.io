@@ -9,10 +9,11 @@ last_name: Minegishi
 contact_note: 
 description: >
   Gouki Minegishi (峰岸剛基) is a PhD student at The University of Tokyo (Matsuo Lab)
-  researching mechanistic interpretability of large language models and AI safety.
+  who studies complex models through settings simple enough to explain completely,
+  with the ultimate aim of understanding human intelligence.
   Find publications, talks, and CV.
 footer_text:
-keywords: Gouki Minegishi, 峰岸剛基, mechanistic interpretability, LLM interpretability, AI safety, large language models, University of Tokyo, Matsuo Lab, PhD student, machine learning research
+keywords: Gouki Minegishi, 峰岸剛基, interpretability, LLM interpretability, science of deep learning, human intelligence, AI safety, large language models, University of Tokyo, Matsuo Lab, PhD student
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⛩️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
