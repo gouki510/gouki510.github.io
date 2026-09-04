@@ -1438,125 +1438,430 @@ figure.cover {
 }
 
 /*******************************************************************************
- * Japanese-inspired Custom Styles (和風カスタムスタイル)
+ * 和モダン Design System (Japanese-modern)
+ *
+ * Three ideas carry the whole look:
+ *   1. 罫線 (keisen) — hairline rules do the structural work, not boxes/shadows.
+ *   2. 朱印 (shu-in) — vermilion appears only as a seal: awards, active state,
+ *      section markers. Never as a large fill.
+ *   3. 余白 (yohaku) — generous whitespace and wide letter-tracking, the way
+ *      Japanese typesetting breathes.
  ******************************************************************************/
 
-// Elegant underline effect for navigation links
-.navbar.navbar-light .navbar-nav .nav-item .nav-link {
-  position: relative;
-  
-  &::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: 0;
-    left: 50%;
-    background-color: var(--global-hover-color);
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
+// --- Tokens -----------------------------------------------------------------
+
+:root {
+  --wa-track-wide: 0.16em; // section labels
+  --wa-track-display: 0.14em; // the name
+  --wa-rule: var(--global-divider-color);
+  --wa-seal: var(--global-hover-color); // 朱
+  --wa-ink: var(--global-theme-color); // 藍
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: rgba(197, 61, 67, 0.18);
+  color: inherit;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--wa-seal);
+  outline-offset: 2px;
+}
+
+// --- Typographic rhythm -----------------------------------------------------
+
+body {
+  line-height: 1.85; // 和文は行間を広く
+}
+
+.post > article {
+  p {
+    margin-bottom: 1.15rem;
   }
-  
-  &:hover::after {
-    width: 80%;
+
+  // Inline links get a hairline underline that thickens on hover, rather
+  // than the default color-only change — reads as deliberate on paper-toned bg.
+  p > a,
+  li > a {
+    border-bottom: 1px solid var(--global-divider-color);
+    transition:
+      border-color 0.25s ease,
+      color 0.25s ease;
+
+    &:hover {
+      border-bottom-color: var(--wa-seal);
+    }
   }
 }
 
-// Name/brand styling with subtle decoration
+// --- The signature motif: 朱の印 + label + 罫線 -------------------------------
+//
+//   ■ SELECTED PUBLICATIONS ────────────────────────────────────
+//
+// A small vermilion square, a wide-tracked indigo label, then a hairline
+// filling the rest of the measure. Used for every section heading.
+
+@mixin wa-section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: var(--wa-track-wide);
+  text-transform: uppercase;
+  color: var(--wa-ink);
+  margin: 2.6rem 0 1.1rem;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--wa-seal);
+    }
+  }
+
+  // 朱の印
+  &::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 0.42em;
+    height: 0.42em;
+    background: var(--wa-seal);
+  }
+
+  // 罫線
+  &::after {
+    content: "";
+    flex: 1 1 auto;
+    height: 1px;
+    background: var(--wa-rule);
+  }
+}
+
+.post > article > h2 {
+  @include wa-section-label;
+}
+
+// --- About page header ------------------------------------------------------
+
+.post-header {
+  margin-bottom: 1.6rem;
+
+  .post-title {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 300;
+    letter-spacing: var(--wa-track-display);
+    line-height: 1.25;
+
+    .font-weight-bold {
+      font-weight: 500 !important;
+    }
+  }
+
+  .desc {
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    color: var(--global-text-color-light);
+  }
+}
+
+// Name sits above a hairline that runs the full measure, with the socials
+// tucked under it — a 名刺 (business card) sort of arrangement.
+.post-header .social.header-social {
+  border-top: 1px solid var(--wa-rule);
+  padding-top: 0.7rem;
+  margin-top: 0.9rem;
+
+  .contact-icons a {
+    color: var(--wa-ink);
+    transition:
+      color 0.25s ease,
+      transform 0.25s ease;
+
+    &:hover {
+      color: var(--wa-seal);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// --- Profile image ----------------------------------------------------------
+// 和 doesn't do drop shadows; use a hairline and a slight paper inset instead.
+
+.profile img {
+  border-radius: 1px;
+  box-shadow: none !important;
+  border: 1px solid var(--wa-rule);
+}
+
+// --- Navbar -----------------------------------------------------------------
+
+.navbar {
+  border-bottom: 1px solid var(--wa-rule);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+}
+
 .navbar-brand {
   font-family: "Noto Serif JP", serif !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.1em;
-  position: relative;
+  font-weight: 400 !important;
+  letter-spacing: 0.12em;
 }
 
-// Publication badges with refined style
-.publications ol.bibliography li .abbr abbr {
-  border-radius: 0;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  padding: 0.25rem 0.6rem;
+.navbar.navbar-light .navbar-nav .nav-item {
+  .nav-link {
+    position: relative;
+    font-size: 0.86rem;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+
+    // 朱 underline grows from the left, like a brush stroke
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      bottom: 0.35rem;
+      height: 1px;
+      background-color: var(--wa-seal);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.28s ease;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+
+  &.active .nav-link::after {
+    transform: scaleX(1);
+  }
 }
 
-// Refined blockquote style (vertical line like Japanese book binding)
+// --- Panels (cards) ---------------------------------------------------------
+// Flat, hairline-ruled panels. No lift, no shadow.
+
+.card {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--wa-rule);
+  border-radius: 1px;
+  box-shadow: none;
+  transition: border-color 0.25s ease;
+
+  &:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--wa-ink);
+  }
+}
+
+// --- Publications -----------------------------------------------------------
+
+.publications {
+  h1 {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 300;
+    letter-spacing: var(--wa-track-display);
+    text-align: left;
+    font-size: 1.9rem;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  // Year dividers become a right-aligned 年号 marker on a hairline
+  h2.bibliography {
+    color: var(--global-text-color-light);
+    border-top: 1px solid var(--wa-rule);
+    text-align: right;
+    letter-spacing: 0.1em;
+
+    &::before {
+      content: none;
+    }
+
+    span {
+      font-family: "Noto Serif JP", serif;
+      font-weight: 300;
+    }
+  }
+
+  ol.bibliography li {
+    padding-bottom: 1rem;
+
+    .title {
+      font-family: "Noto Serif JP", serif;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      line-height: 1.5;
+    }
+
+    .author {
+      font-size: 0.92rem;
+      color: var(--global-text-color-light);
+    }
+
+    // Venue reads as a small tracked label in 藍
+    .periodical {
+      font-style: normal;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      color: var(--wa-ink);
+    }
+
+    // Venue abbreviation chip: outlined, not filled — quieter than default
+    .abbr abbr {
+      border-radius: 1px;
+      background-color: transparent !important;
+      border: 1px solid var(--wa-ink);
+      color: var(--wa-ink) !important;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      padding: 0.15rem 0.55rem;
+
+      a {
+        color: var(--wa-ink);
+      }
+    }
+
+    // Awards are the one place 朱 fills a shape — a seal.
+    .abbr .award,
+    .links a.award.btn {
+      background-color: var(--wa-seal) !important;
+      border: 1px solid var(--wa-seal) !important;
+      border-radius: 1px;
+      color: #fff !important;
+      letter-spacing: 0.08em;
+
+      &:hover {
+        background-color: var(--wa-seal) !important;
+        color: #fff !important;
+        opacity: 0.85;
+      }
+    }
+
+    .links a.btn {
+      border-radius: 1px;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      border-color: var(--wa-rule);
+
+      &:hover {
+        border-color: var(--wa-ink);
+        color: var(--wa-ink);
+      }
+    }
+  }
+}
+
+// --- CV page ----------------------------------------------------------------
+
+.cv {
+  .card {
+    margin-bottom: 1.1rem;
+  }
+
+  .card-title {
+    @include wa-section-label;
+    margin: 0 0 0.9rem;
+  }
+
+  // Timeline year badges: hairline outline in 藍 rather than a filled pill
+  .badge {
+    background-color: transparent !important;
+    border: 1px solid var(--wa-ink);
+    border-radius: 1px;
+    color: var(--wa-ink) !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.06em;
+  }
+
+  .list-group-item {
+    background: transparent;
+    border-color: var(--wa-rule);
+    list-style: none;
+    padding-left: 0;
+  }
+
+  // Group label inside a panel (e.g. "Reviewer" / "Organizer")
+  h5.font-italic {
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--wa-ink);
+    margin-bottom: 0.45rem;
+  }
+
+  h6.title {
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+  }
+
+  // Nested items get a hairline 藍 dash instead of a browser bullet
+  ul.subitems,
+  ul.card-text {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  ul.subitems {
+    margin-left: 0.15rem;
+
+    li {
+      position: relative;
+      padding-left: 1.15em;
+      margin-bottom: 0.15rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.85em;
+        width: 0.55em;
+        height: 1px;
+        background: var(--wa-ink);
+      }
+    }
+  }
+
+  .subitem {
+    letter-spacing: 0.02em;
+  }
+}
+
+// --- Blockquote (縦罫 like a book binding) -----------------------------------
+
 blockquote {
-  border-left: 3px solid var(--global-theme-color);
+  border-left: 2px solid var(--wa-seal);
   background: transparent;
   padding-left: 1.5em;
-  font-style: italic;
-  
+  font-style: normal;
+  color: var(--global-text-color-light);
+
   &::before {
     content: none;
   }
 }
 
-// Subtle card hover effect
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 2px;
-  
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(30, 58, 95, 0.1);
-  }
-}
+// --- Footer -----------------------------------------------------------------
 
-// Section headers with decorative line
-h2.bibliography,
-.publications h1 {
-  position: relative;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 30px;
-    height: 2px;
-    background: var(--global-hover-color);
-  }
-}
-
-// Social icons with smooth transition
-.social .contact-icons a {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-3px);
-    opacity: 0.8;
-  }
-}
-
-// About page name styling
-.about h1 {
-  font-family: "Noto Serif JP", serif;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-}
-
-// Refined footer
 footer {
-  letter-spacing: 0.05em;
-}
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
 
-// Selected publications section styling
-.selected {
-  position: relative;
-}
-
-// Smooth scroll behavior
-html {
-  scroll-behavior: smooth;
-}
-
-// Selection color
-::selection {
-  background-color: rgba(197, 61, 67, 0.2);
-  color: inherit;
-}
-
-// Focus states
-*:focus {
-  outline-color: var(--global-theme-color);
+  .container {
+    border-top: 1px solid rgba(248, 244, 230, 0.14);
+    padding-top: 1rem;
+  }
 }

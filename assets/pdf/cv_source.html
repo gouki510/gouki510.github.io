@@ -5,79 +5,113 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gouki Minegishi – CV</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap');
 
+  /*
+   * 和モダン palette — shared with gouki510.github.io
+   *   藍 (ai)      structure, labels, numbering
+   *   朱 (shu)     seals only: awards
+   *   墨 (sumi)    body text
+   *   生成り(kinari) warm paper tint, header band only (print-friendly)
+   *   灰 (hai)     secondary text
+   */
   :root {
-    --accent: #2563eb;
-    --text: #1e293b;
-    --muted: #64748b;
-    --border: #e2e8f0;
+    --ai: #1e3a5f;
+    --ai-light: #2d5a87;
+    --shu: #c53d43;
+    --sumi: #1c1c1c;
+    --kinari: #f8f4e6;
+    --hai: #7d7d7d;
+    --rule: rgba(30, 58, 95, 0.22);
     --bg: #ffffff;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
-    color: var(--text);
+    font-family: 'Zen Kaku Gothic New', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--sumi);
     background: var(--bg);
     font-size: 9.5pt;
-    line-height: 1.45;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
   }
 
   .page {
     max-width: 780px;
     margin: 0 auto;
-    padding: 36px 48px;
+    padding: 32px 46px;
   }
 
-  /* Header */
+  /* Header — 名刺 layout: name block left, contact stacked right */
   header {
-    text-align: center;
-    margin-bottom: 20px;
-    padding-bottom: 14px;
-    border-bottom: 2px solid var(--accent);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 18px;
+    padding: 13px 18px 11px;
+    background: var(--kinari);
+    border-bottom: 2px solid var(--ai);
   }
   header h1 {
-    font-size: 22pt;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    color: var(--text);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 21pt;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    color: var(--sumi);
     margin-bottom: 2px;
   }
   header .subtitle {
-    font-size: 11pt;
+    font-size: 9.5pt;
     font-weight: 400;
-    color: var(--muted);
-    margin-bottom: 6px;
+    letter-spacing: 0.1em;
+    color: var(--ai);
   }
   header .contact {
-    font-size: 8.5pt;
-    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1px;
+    font-size: 8.3pt;
+    letter-spacing: 0.03em;
+    color: var(--hai);
+    text-align: right;
+    white-space: nowrap;
   }
   header .contact a {
-    color: var(--accent);
+    color: var(--ai);
     text-decoration: none;
   }
-  header .contact span + span::before {
-    content: "  ·  ";
-    color: var(--border);
-  }
 
-  /* Sections */
+  /* Sections — 朱の印 + wide-tracked 藍 label + 罫線 filling the measure */
   section {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
   }
   section h2 {
-    font-size: 10.5pt;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    font-size: 9pt;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--accent);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 3px;
-    margin-bottom: 8px;
+    letter-spacing: 0.16em;
+    color: var(--ai);
+    margin-bottom: 7px;
+  }
+  section h2::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 0.45em;
+    height: 0.45em;
+    background: var(--shu);
+  }
+  section h2::after {
+    content: "";
+    flex: 1 1 auto;
+    height: 1px;
+    background: var(--rule);
   }
 
   /* Entries (Education, Experience) */
@@ -85,23 +119,28 @@
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 0 16px;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
+    padding-left: 10px;
+    border-left: 1px solid var(--rule);
   }
   .entry .title {
-    font-weight: 600;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
   }
   .entry .date {
     font-size: 8.5pt;
-    color: var(--muted);
+    color: var(--hai);
+    letter-spacing: 0.04em;
     text-align: right;
     white-space: nowrap;
   }
   .entry .org {
-    color: var(--muted);
+    color: var(--hai);
   }
   .entry .desc {
     grid-column: 1 / -1;
-    color: var(--text);
+    color: var(--sumi);
     margin-top: 2px;
     padding-left: 0;
   }
@@ -123,39 +162,50 @@
     margin-top: 1px;
   }
   .pub-list li::before {
-    content: "[" counter(pub) "]";
+    content: counter(pub, decimal-leading-zero);
     position: absolute;
     left: 0;
+    top: 1px;
     font-size: 8pt;
-    color: var(--muted);
-    font-weight: 600;
+    color: var(--ai);
+    font-weight: 500;
+    letter-spacing: 0.06em;
   }
   .pub-list .pub-title {
-    font-weight: 600;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    letter-spacing: 0.01em;
   }
   .pub-list .pub-venue {
-    font-style: italic;
-    color: var(--muted);
+    font-style: normal;
+    font-size: 8.8pt;
+    letter-spacing: 0.03em;
+    color: var(--ai-light);
   }
   .pub-list .pub-authors {
     font-size: 9pt;
+    color: var(--hai);
   }
   .pub-list .pub-authors .me {
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--sumi);
     text-decoration: underline;
-    text-decoration-color: var(--accent);
+    text-decoration-color: var(--shu);
     text-underline-offset: 2px;
   }
+  /* 朱印 — the one place vermilion fills a shape */
   .pub-list .pub-award {
     display: inline-block;
-    background: #dc2626;
+    background: var(--shu);
     color: #ffffff;
-    font-size: 8pt;
-    font-weight: 700;
+    font-size: 7.2pt;
+    font-weight: 500;
     font-style: normal;
-    padding: 1px 8px;
-    border-radius: 8px;
-    margin-left: 4px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0 5px;
+    border-radius: 1px;
+    margin-left: 5px;
   }
 
   /* Awards & Service */
@@ -168,28 +218,42 @@
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 0 12px;
+    padding-left: 10px;
+    position: relative;
+  }
+  .compact-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 3px;
+    height: 3px;
+    background: var(--ai);
   }
   .compact-list li .year {
     font-size: 8.5pt;
-    color: var(--muted);
+    color: var(--hai);
+    letter-spacing: 0.04em;
     text-align: right;
     white-space: nowrap;
   }
 
-  /* Research Interests (pills) */
+  /* Research Interests — outlined 藍 tags, not filled pills */
   .pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 5px;
     margin-top: 2px;
   }
   .pill {
-    background: #eff6ff;
-    color: var(--accent);
+    background: transparent;
+    border: 1px solid var(--rule);
+    color: var(--ai);
     font-size: 8.5pt;
-    font-weight: 600;
-    padding: 2px 10px;
-    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding: 1px 9px;
+    border-radius: 1px;
   }
 
   /* Service inline */
@@ -210,25 +274,45 @@
     margin-bottom: 2px;
   }
   .service-block .reviewer-list li::before {
-    content: "·";
+    content: "";
     position: absolute;
     left: 0;
-    color: var(--muted);
+    top: 0.55em;
+    width: 3px;
+    height: 3px;
+    background: var(--ai);
   }
   .service-block .reviewer-list .venue {
-    font-weight: 600;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    letter-spacing: 0.04em;
   }
 
-  /* Print */
+  /* Print — keep the 和 ink exact, and never orphan a section heading */
   @media print {
     body { font-size: 9.5pt; }
-    .page { padding: 24px 32px; max-width: none; }
-    header { border-bottom-color: var(--accent); }
-    section h2 { color: var(--accent) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .pill { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    a { color: var(--accent) !important; }
-    .pub-award { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #dc2626 !important; color: #ffffff !important; }
-    @page { margin: 12mm 10mm; size: A4; }
+    .page { padding: 22px 30px; max-width: none; }
+    header,
+    section h2,
+    section h2::before,
+    section h2::after,
+    .pill,
+    .pub-list li::before,
+    .compact-list li::before,
+    .reviewer-list li::before,
+    .pub-award {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    header { background: var(--kinari) !important; border-bottom-color: var(--ai) !important; }
+    section h2 { color: var(--ai) !important; }
+    section h2::before { background: var(--shu) !important; }
+    a { color: var(--ai) !important; }
+    .pub-award { background: var(--shu) !important; color: #ffffff !important; }
+    section { break-inside: auto; }
+    section h2 { break-after: avoid; }
+    .pub-list li, .entry, .compact-list li { break-inside: avoid; }
+    @page { margin: 11mm 10mm; size: A4; }
   }
 </style>
 </head>
@@ -236,8 +320,10 @@
 <div class="page">
 
 <header>
-  <h1>Gouki Minegishi</h1>
-  <div class="subtitle">Ph.D. Candidate · The University of Tokyo</div>
+  <div class="header-main">
+    <h1>Gouki Minegishi</h1>
+    <div class="subtitle">Ph.D. Candidate · The University of Tokyo</div>
+  </div>
   <div class="contact">
     <span>Tokyo, Japan</span>
     <span><a href="mailto:minegishi@weblab.t.u-tokyo.ac.jp">minegishi@weblab.t.u-tokyo.ac.jp</a></span>
