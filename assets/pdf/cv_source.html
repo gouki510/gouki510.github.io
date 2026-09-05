@@ -196,6 +196,12 @@
     font-weight: 500;
     letter-spacing: 0.01em;
   }
+  /* Titles and workshop venues link to the paper. Kept visually identical to
+     unlinked text so the printed page stays clean; the PDF is still clickable. */
+  .pub-list a {
+    color: inherit;
+    text-decoration: none;
+  }
   .pub-list .pub-venue {
     font-style: normal;
     font-size: 8.8pt;
@@ -327,7 +333,7 @@
     header { background: var(--kinari) !important; border-bottom-color: var(--ai) !important; }
     section h2 { color: var(--ai) !important; }
     section h2::before { background: var(--shu) !important; }
-    a { color: var(--ai) !important; }
+    header a { color: var(--ai) !important; }
     .pub-award { background: var(--shu) !important; color: #ffffff !important; }
     section { break-inside: auto; }
     section h2 { break-after: avoid; }
@@ -386,80 +392,80 @@
   <h2>Selected Publications</h2>
   <ol class="pub-list">
     <li>
-      <div class="pub-head"><span class="pub-title">Emergent Analogical Reasoning in Transformers</span><span class="pub-abbr">ICML 2026</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=aFCoTBGM4M">Emergent Analogical Reasoning in Transformers</a></span><span class="pub-abbr">ICML 2026</span></div>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Jingyuan Feng, Hiroki Furuta, Takeshi Kojima, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">International Conference on Machine Learning (ICML), 2026 <span class="pub-award">Spotlight (top 2.2%)</span></span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Steering at the Source: Style Modulation Heads for Robust Persona Control</span><span class="pub-abbr">ICML 2026</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=JlO2MCzUto">Steering at the Source: Style Modulation Heads for Robust Persona Control</a></span><span class="pub-abbr">ICML 2026</span></div>
       <span class="pub-authors">Yoshihiro Izawa, <span class="me">Gouki Minegishi</span>, Koshi Eguchi, Sosuke Hosokawa, and Kenjiro Taura</span><br>
       <span class="pub-venue">International Conference on Machine Learning (ICML), 2026</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Understanding Emergent Misalignment via Feature Superposition Geometry</span><span class="pub-abbr">ACL 2026</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://arxiv.org/abs/2605.00842">Understanding Emergent Misalignment via Feature Superposition Geometry</a></span><span class="pub-abbr">ACL 2026</span></div>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Takeshi Kojima, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">Annual Meeting of the Association for Computational Linguistics (ACL), 2026</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Mechanism of Task-oriented Information Removal in In-context Learning</span><span class="pub-abbr">ICLR 2026</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=VAv1rrPR1A">Mechanism of Task-oriented Information Removal in In-context Learning</a></span><span class="pub-abbr">ICLR 2026</span></div>
       <span class="pub-authors">Hakaze Cho, Haolin Yang, <span class="me">Gouki Minegishi</span>, and Naoya Inoue</span><br>
       <span class="pub-venue">International Conference on Learning Representations (ICLR), 2026</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">RL Squeezes, SFT Expands: A Comparative Study of Reasoning LLMs</span><span class="pub-abbr">ICLR 2026</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://arxiv.org/abs/2509.21128">RL Squeezes, SFT Expands: A Comparative Study of Reasoning LLMs</a></span><span class="pub-abbr">ICLR 2026</span></div>
       <span class="pub-authors">Kohsei Matsutani, Shota Takashiro, <span class="me">Gouki Minegishi</span>, Takeshi Kojima, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">International Conference on Learning Representations (ICLR), 2026</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">LIT-RAGBench: Benchmarking Generator Capabilities of Large Language Models in Retrieval-Augmented Generation</span><span class="pub-abbr">LREC-COLING 2026</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://arxiv.org/abs/2603.06198">LIT-RAGBench: Benchmarking Generator Capabilities of Large Language Models in Retrieval-Augmented Generation</a></span><span class="pub-abbr">LREC-COLING 2026</span></div>
       <span class="pub-authors">Koki Itai, Shunichi Hasegawa, Yuta Yamamoto, <span class="me">Gouki Minegishi</span>, and Masaki Otsuki</span><br>
       <span class="pub-venue">Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING), 2026</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">In-Context Neurofeedback: Can LLMs Control Their Internal Representations through Privileged Access?</span><span class="pub-abbr">EMNLP Findings 2026</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://arxiv.org/abs/2609.00904">In-Context Neurofeedback: Can LLMs Control Their Internal Representations through Privileged Access?</a></span><span class="pub-abbr">EMNLP Findings 2026</span></div>
       <span class="pub-authors">Koshiro Aoki, Ryota Takatsuki, <span class="me">Gouki Minegishi</span>, Yusuke Haruki, and Daisuke Kawahara</span><br>
       <span class="pub-venue">Findings of the Association for Computational Linguistics: EMNLP, 2026</span><br>
-      <span class="pub-venue">Trustworthy AI for Good (AI4GOOD) Workshop @ ICML, 2026 <span class="pub-award">Spotlight</span></span>
+      <span class="pub-venue"><a href="https://openreview.net/forum?id=3g6jrASugZ">Trustworthy AI for Good (AI4GOOD) Workshop @ ICML, 2026</a> <span class="pub-award">Spotlight</span></span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Zipping the Thought: When and How Compressed Reasoning Data Works in LLM Post-Training</span><span class="pub-abbr">EMNLP Findings 2026</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://arxiv.org/abs/2605.28008">Zipping the Thought: When and How Compressed Reasoning Data Works in LLM Post-Training</a></span><span class="pub-abbr">EMNLP Findings 2026</span></div>
       <span class="pub-authors">Kohsei Matsutani, <span class="me">Gouki Minegishi</span>, Takeshi Kojima, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">Findings of the Association for Computational Linguistics: EMNLP, 2026</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Topology of Reasoning: Understanding Large Reasoning Models through Reasoning Graph Properties</span><span class="pub-abbr">NeurIPS 2025</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=o1g8NWkxqf">Topology of Reasoning: Understanding Large Reasoning Models through Reasoning Graph Properties</a></span><span class="pub-abbr">NeurIPS 2025</span></div>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Takeshi Kojima, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">Neural Information Processing Systems (NeurIPS), 2025</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence</span><span class="pub-abbr">ICML 2025</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=Xw01vF13aV">Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence</a></span><span class="pub-abbr">ICML 2025</span></div>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Shohei Taniguchi, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">International Conference on Machine Learning (ICML), 2025</span><br>
-      <span class="pub-venue">ICLR Workshop on Building Trust in Language Models and Applications, 2025 <span class="pub-award">Oral</span></span>
+      <span class="pub-venue"><a href="https://openreview.net/forum?id=LNMfzv8TNb">ICLR Workshop on Building Trust in Language Models and Applications, 2025</a> <span class="pub-award">Oral</span></span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Rethinking Evaluation of Sparse Autoencoders through the Representation of Polysemous Words</span><span class="pub-abbr">ICLR 2025</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=HpUs2EXjOl">Rethinking Evaluation of Sparse Autoencoders through the Representation of Polysemous Words</a></span><span class="pub-abbr">ICLR 2025</span></div>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Hiroki Furuta, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">International Conference on Learning Representations (ICLR), 2025</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Interpreting Multi-Attribute Confounding through Numerical Attributes in Large Language Models</span><span class="pub-abbr">IJCNLP-AACL 2025</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=CwKO4JphqI">Interpreting Multi-Attribute Confounding through Numerical Attributes in Large Language Models</a></span><span class="pub-abbr">IJCNLP-AACL 2025</span></div>
       <span class="pub-authors">Hirohane Takagi*, <span class="me">Gouki Minegishi</span>*, Shota Kizawa, Issey Sukeda, Hitomi Yanaka (* Equal Contribution)</span><br>
       <span class="pub-venue">International Joint Conference on NLP / Asia-Pacific Chapter of ACL (IJCNLP-AACL), 2025</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Bridging Lottery Ticket and Grokking: Understanding Grokking from Inner Structure of Networks</span><span class="pub-abbr">TMLR</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=eQeYyup1tm">Bridging Lottery Ticket and Grokking: Understanding Grokking from Inner Structure of Networks</a></span><span class="pub-abbr">TMLR</span></div>
       <span class="pub-authors"><span class="me">Gouki Minegishi</span>, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">Transactions on Machine Learning Research (TMLR)</span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">Towards Empirical Interpretation of Internal Circuits and Properties in Grokked Transformers on Modular Polynomials</span><span class="pub-abbr">TMLR</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=MzSf70uXJO">Towards Empirical Interpretation of Internal Circuits and Properties in Grokked Transformers on Modular Polynomials</a></span><span class="pub-abbr">TMLR</span></div>
       <span class="pub-authors">Hiroki Furuta, <span class="me">Gouki Minegishi</span>, Yusuke Iwasawa, and Yutaka Matsuo</span><br>
       <span class="pub-venue">Transactions on Machine Learning Research (TMLR)</span><br>
-      <span class="pub-venue">ICLR Workshop on Bridging the Gap Between Practice and Theory in Deep Learning, 2024 <span class="pub-award">Oral</span></span>
+      <span class="pub-venue"><a href="https://openreview.net/forum?id=bP8qHYBoTk">ICLR Workshop on Bridging the Gap Between Practice and Theory in Deep Learning, 2024</a> <span class="pub-award">Oral</span></span>
     </li>
     <li>
-      <div class="pub-head"><span class="pub-title">ADOPT: Modified Adam Can Converge with Any β2 with the Optimal Rate</span><span class="pub-abbr">NeurIPS 2024</span></div>
+      <div class="pub-head"><span class="pub-title"><a href="https://openreview.net/forum?id=rzvVm0LsyK">ADOPT: Modified Adam Can Converge with Any β2 with the Optimal Rate</a></span><span class="pub-abbr">NeurIPS 2024</span></div>
       <span class="pub-authors">Shohei Taniguchi, Keno Harada, <span class="me">Gouki Minegishi</span>, et al.</span><br>
       <span class="pub-venue">Neural Information Processing Systems (NeurIPS), 2024</span>
     </li>
