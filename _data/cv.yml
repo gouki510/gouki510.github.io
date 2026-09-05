@@ -15,13 +15,9 @@
 - title: Research Interests
   type: list
   contents:
-    - Interpretability
-    - Science of Deep Learning
-    - In-Context Learning
-    - Large Language Models
     - Reasoning
-    - Sparse Autoencoders
-    - Neural Network Circuits
+    - Interpretability
+    - Safety
 
 - title: Education
   type: time_table
